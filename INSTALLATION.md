@@ -25,7 +25,7 @@ Then open the editor and install the following extension. As I said, you can fre
 - Haskell Syntax Highlighting (dependent on Haskell but aytomatically installs it)
 - Badnesss
 
-</span>
+</span><br>
 <span style="color:blue">
 
 - Rainbow CSV
@@ -39,7 +39,7 @@ Then open the editor and install the following extension. As I said, you can fre
 
 </span>
 
-Red extensione are related to specific languages, while blue ones are utilities.
+The (red) first set of extensions are related to specific languages, while the remaining (blue) ones are utilities.
 
 [//]: <> ( Woo I can do comments now )
 
