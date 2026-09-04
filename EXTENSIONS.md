@@ -37,10 +37,12 @@ Clangdb is an all-in-one formatter, linter and language server for C and C++. It
 The simplest and most effective way to implement support to Haskell in Codium. Provides formatting, linting and all the useful language server functionalities.
 # LaTeX
 - Badnesss
+
+Extensions that provides error, linting and formatting for $\LaTeX$ files. It also provides insanely good fast fixes, while being still early in development. But for compiled $\LaTeX$ in pdf you'll need
 # PDF
 - PDF Viewer
 
-Very simple extension that allows Codium to render pdf files. Does not integrate pdf editing.
+Very simple extension that allows Codium to render pdf files, fundamental for $\LaTeX$, but also useful for normal pdf usage. Does not integrate pdf editing (even though there are extension to do that, they are usually ether slow or with poor features).
 # CSV
 - Rainbow CSV
 
