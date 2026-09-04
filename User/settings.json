@@ -15,7 +15,7 @@
 	"basedpyright.analysis.inlayHints.callArgumentNamesMatching": true,
 	"basedpyright.analysis.inlayHints.genericTypes": true,
 	//ruff
-	"ruff.lint.ignore": ["EXE"], // prevents shebag error with better comments next
+	"ruff.lint.ignore": ["EXE"], // prevents shebang error with better comments next
 	"[python]": {
 		"editor.defaultFormatter": "charliermarsh.ruff",
 		"editor.codeActionsOnSave": {
@@ -63,7 +63,6 @@
 
 	//HTML
 	"[html]": {
-		//"editor.suggest.insertMode": "replace"
 		"editor.defaultFormatter": "biomejs.biome"
 	},
 
@@ -78,7 +77,6 @@
 		"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
 		"editor.formatOnSave": true
 	},
-	"clangd.path": "/home/matteo/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/22.1.6/clangd_22.1.6/bin/clangd",
 
 	//HASKELL
 	"haskell.manageHLS": "GHCup",
@@ -270,8 +268,6 @@
 
 	//PERSONAL LINTING
 	"editor.tokenColorCustomizations": {
-		//"functions": "#000000",
-		//string support.class keyword costant.numeric variables entity.name.class"
 		"textMateRules": [
 			{
 				"scope": "comment",
@@ -300,10 +296,7 @@
 			}
 			/*
 			{
-				//"scope": "variable",
 				"scope": "entity.name.type.class",
-				//"scope": "entity.name.function", //funzia
-				//"scope": "entity.name.type.class",
 				"settings": {
 					"foreground": "#00ff00",
 					"fontSize": "20px", //fontsize attribute doesn't seem to be supported
