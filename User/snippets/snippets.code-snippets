@@ -1,0 +1,76 @@
+{
+	"new snippet": {
+		"prefix": "snippet",
+		"body": [
+			"\"$1\": {",
+			"\"prefix\":\"$2\",",
+			"\"body\":[$3],",
+			"\"description\":\"$4\",",
+			"},"
+		],
+		"description": "Fast snippet for snippets"
+	},
+	"divider": {
+		"prefix": "divider",
+		"body": [
+			"__________________________________________________________",
+			"¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+		],
+		"description": "A big divider for text"
+	},
+	"clang-format": {
+		"prefix": "clang-format",
+		"body": [
+			"BasedOnStyle: LLVM",
+			"",
+			"UseTab: Never",
+			"IndentWidth: 4",
+			"TabWidth: 4",
+			"",
+			"BreakBeforeBraces: Attach",
+			"AllowShortBlocksOnASingleLine: Always",
+			"AllowShortFunctionsOnASingleLine: InlineOnly",
+			"AllowShortCaseExpressionOnASingleLine: True",
+			"AllowAllArgumentsOnNextLine: True",
+			"",
+			"PointerAlignment: Left",
+			"ReferenceAlignment: Left",
+			"",
+			"SpaceBeforeParens: ControlStatements",
+			"SpacesInAngles: Leave"
+		],
+		"description": "Fast .clang-format configuration"
+	},
+	"debug-launch-clike": {
+		"prefix": "debug-c",
+		"body": [
+			"{",
+			"\"name\":\"C/C++ debug\",",
+			"\"version\": \"0.2.0\",",
+			"\"type\": \"lldb\",",
+			"\"request\": \"launch\",",
+			"\"program\": \"${workspaceRoot}/${1:main}\",",
+			"\"args\": \"$0\",",
+			"\"cwd\": \"${workspaceRoot}\"",
+			"}"
+		],
+		"description": "Fast launch.json for debigging c/c++"
+	},
+	"debug-launch-python": {
+		"prefix": "debug-py",
+		"body": [
+			"{",
+			"\"configurations\":[",
+			"{",
+			"\"name\":\"Python debug\",",
+			"\"type\": \"python\",",
+			"\"request\": \"launch\",",
+			"\"program\": \"${workspaceRoot}/${1:filename}\",",
+			"\"console\": \"integratedTerminal\"",
+			"}",
+			"]",
+			"}"
+		],
+		"description": "SHOULD BE UPDATED TO DEBUGPY. Fast launch.json for debigging python"
+	}
+}

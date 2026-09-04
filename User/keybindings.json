@@ -1,0 +1,489 @@
+// Place your key bindings in this file to override the defaults
+[
+	{
+		"key": "ctrl+[Semicolon]",
+		"command": "workbench.action.terminal.new"
+	},
+	{
+		"key": "ctrl+k ctrl+2",
+		"command": "-editor.foldLevel2",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+k ctrl+1",
+		"command": "-editor.foldLevel1",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+k ctrl+3",
+		"command": "-editor.foldLevel3",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+k ctrl+4",
+		"command": "-editor.foldLevel4",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+k ctrl+5",
+		"command": "-editor.foldLevel5",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+k ctrl+6",
+		"command": "-editor.foldLevel6",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+k ctrl+7",
+		"command": "-editor.foldLevel7",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+1",
+		"command": "workbench.action.openEditorAtIndex1"
+	},
+	{
+		"key": "alt+1",
+		"command": "-workbench.action.openEditorAtIndex1"
+	},
+	{
+		"key": "ctrl+2",
+		"command": "workbench.action.openEditorAtIndex2"
+	},
+	{
+		"key": "alt+2",
+		"command": "-workbench.action.openEditorAtIndex2"
+	},
+	{
+		"key": "ctrl+3",
+		"command": "workbench.action.openEditorAtIndex3"
+	},
+	{
+		"key": "alt+3",
+		"command": "-workbench.action.openEditorAtIndex3"
+	},
+	{
+		"key": "ctrl+4",
+		"command": "workbench.action.openEditorAtIndex4"
+	},
+	{
+		"key": "alt+4",
+		"command": "-workbench.action.openEditorAtIndex4"
+	},
+	{
+		"key": "ctrl+5",
+		"command": "workbench.action.openEditorAtIndex5"
+	},
+	{
+		"key": "alt+5",
+		"command": "-workbench.action.openEditorAtIndex5"
+	},
+	{
+		"key": "ctrl+6",
+		"command": "workbench.action.openEditorAtIndex6"
+	},
+	{
+		"key": "alt+6",
+		"command": "-workbench.action.openEditorAtIndex6"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "workbench.view.explorer",
+		"when": "viewContainer.workbench.view.explorer.enabled"
+	},
+	{
+		"key": "ctrl+shift+e",
+		"command": "-workbench.view.explorer",
+		"when": "viewContainer.workbench.view.explorer.enabled"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "-workbench.action.chat.newChat",
+		"when": "chatIsEnabled && inChat && chatLocation == 'panel'"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "-expandLineSelection",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "-workbench.action.browser.focusUrlInput",
+		"when": "activeEditor == 'workbench.editor.browser'"
+	},
+	{
+		"key": "ctrl+t",
+		"command": "-workbench.action.showAllSymbols"
+	},
+	{
+		"key": "ctrl+shift+t",
+		"command": "workbench.view.extension.todo-tree-container"
+	},
+	{
+		"key": "ctrl+shift+[Comma]",
+		"command": "workbench.action.openSettingsJson"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "welcome.showNewFileEntries"
+	},
+	{
+		"key": "ctrl+alt+meta+n",
+		"command": "-welcome.showNewFileEntries"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "-notebook.centerActiveCell",
+		"when": "notebookEditorFocused"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "workbench.action.gotoLine"
+	},
+	{
+		"key": "ctrl+g",
+		"command": "-workbench.action.gotoLine"
+	},
+	{
+		"key": "ctrl+g",
+		"command": "workbench.view.scm",
+		"when": "workbench.scm.active"
+	},
+	{
+		"key": "ctrl+shift+g",
+		"command": "-workbench.view.scm",
+		"when": "workbench.scm.active"
+	},
+	{
+		"key": "ctrl+m",
+		"command": "-editor.action.toggleTabFocusMode"
+	},
+	{
+		"key": "ctrl+m",
+		"command": "workbench.view.extension.project-manager"
+	},
+	{
+		"key": "ctrl+d",
+		"command": "-editor.action.addSelectionToNextFindMatch",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+d",
+		"command": "-notebook.addFindMatchToSelection",
+		"when": "config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
+	},
+	{
+		"key": "ctrl+d",
+		"command": "editor.action.revealDefinition",
+		"when": "editorHasDefinitionProvider && editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+j",
+		"command": "-workbench.action.search.toggleQueryDetails",
+		"when": "inSearchEditor || searchViewletFocus"
+	},
+	{
+		"key": "ctrl+t",
+		"command": "workbench.action.terminal.toggleTerminal"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "-workbench.action.togglePanel"
+	},
+	{
+		"key": "ctrl+l ctrl+b",
+		"command": "latex-workshop.build",
+		"when": "config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^bibtex$|^latex$|^latex-class$|^latex-package$|^context$|^latex-expl3$|^doctex$|^rsweave$|^jlweave$|^pweave$/"
+	},
+	{
+		"key": "ctrl+l alt+b",
+		"command": "-latex-workshop.build",
+		"when": "config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^bibtex$|^latex$|^latex-class$|^latex-package$|^context$|^latex-expl3$|^doctex$|^rsweave$|^jlweave$|^pweave$/"
+	},
+	{
+		"key": "ctrl+alt+b",
+		"command": "-latex-workshop.build",
+		"when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^build$|^latex$|^latex-class$|^latex-package$|^context$|^latex-expl3$|^doctex$|^rsweave$|^jlweave$|^pweave$/"
+	},
+	{
+		"key": "ctrl+l ctrl+b",
+		"command": "-latex-workshop.shortcut.textbf",
+		"when": "editorTextFocus && !editorReadonly && editorLangId =~ /^bibtex$|^latex$|^context$|^latex-expl3$|^doctex$|^rsweave$|^jlweave$|^pweave$/"
+	},
+	{
+		"key": "ctrl+y",
+		"command": "-chatEditor.action.acceptHunk",
+		"when": "chatEdits.cursorInChangeRange && chatEdits.hasEditorModifications && editorFocus && !chatEdits.isCurrentlyBeingModified || chatEdits.cursorInChangeRange && chatEdits.hasEditorModifications && notebookCellListFocused && !chatEdits.isCurrentlyBeingModified"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "-workbench.action.files.newUntitledFile"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "-chatEditor.action.undoHunk",
+		"when": "chatEdits.cursorInChangeRange && chatEdits.hasEditorModifications && editorFocus && !chatEdits.isCurrentlyBeingModified || chatEdits.cursorInChangeRange && chatEdits.hasEditorModifications && notebookCellListFocused && !chatEdits.isCurrentlyBeingModified"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "-workbench.action.openChat",
+		"when": "chatIsEnabled && inChat && inChatEditor"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "-workbench.action.chat.newChat",
+		"when": "chatIsEnabled && inChat && chatLocation == 'panel'"
+	},
+	{
+		"key": "ctrl+t",
+		"command": "-workbench.action.browser.newTab",
+		"when": "activeEditor == 'workbench.editor.browser'"
+	},
+	{
+		"key": "ctrl+j c",
+		"command": "notebook.cell.insertCodeCellBelow",
+		"when": "notebookEditable && config.notebook.insertToolbarLocation != 'betweenCells' && config.notebook.insertToolbarLocation != 'hidden'"
+	},
+	{
+		"key": "ctrl+j m",
+		"command": "notebook.cell.insertMarkdownCellBelow",
+		"when": "config.notebook.globalToolbarShowLabel && notebookEditable && config.notebook.globalToolbarShowLabel != 'never' && config.notebook.insertToolbarLocation != 'betweenCells' && config.notebook.insertToolbarLocation != 'hidden'"
+	},
+	{
+		"key": "ctrl+0",
+		"command": "workbench.action.moveModalEditorToMain",
+		"when": "!isSessionsWindow"
+	},
+	{
+		"key": "ctrl+0",
+		"command": "-workbench.action.focusSideBar"
+	},
+	{
+		"key": "ctrl+alt+p",
+		"command": "workbench.actions.view.problems",
+		"when": "workbench.panel.markers.view.active"
+	},
+	{
+		"key": "ctrl+shift+m",
+		"command": "-workbench.actions.view.problems",
+		"when": "workbench.panel.markers.view.active"
+	},
+	{
+		"key": "ctrl+k ctrl+shift+s",
+		"command": "workbench.action.openSnippets"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "editor.debug.action.showDebugHover",
+		"when": "editorTextFocus && inDebugMode"
+	},
+	{
+		"key": "ctrl+k ctrl+i",
+		"command": "-editor.debug.action.showDebugHover",
+		"when": "editorTextFocus && inDebugMode"
+	},
+	{
+		"key": "ctrl+k ctrl+i",
+		"command": "workbench.action.toggleDevTools",
+		"when": "false"
+	},
+	{
+		"key": "ctrl+shift+i",
+		"command": "-workbench.action.toggleDevTools",
+		"when": "isDevelopment"
+	},
+	{
+		"key": "ctrl+shift+f",
+		"command": "-workbench.action.findInFiles"
+	},
+	{
+		"key": "ctrl+shift+f",
+		"command": "-workbench.action.terminal.searchWorkspace",
+		"when": "terminalFocus && terminalProcessSupported && terminalTextSelected"
+	},
+	{
+		"key": "ctrl+shift+f",
+		"command": "-workbench.view.search",
+		"when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"
+	},
+	{
+		"key": "ctrl+shift+f",
+		"command": "notebook.formatCell",
+		"when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+	},
+	{
+		"key": "ctrl+shift+i",
+		"command": "-notebook.formatCell",
+		"when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+	},
+	{
+		"key": "ctrl+shift+f",
+		"command": "editor.action.formatDocument",
+		"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+	},
+	{
+		"key": "ctrl+shift+i",
+		"command": "-editor.action.formatDocument",
+		"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+	},
+	{
+		"key": "ctrl+shift+f",
+		"command": "editor.action.formatDocument.none",
+		"when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+i",
+		"command": "-editor.action.formatDocument.none",
+		"when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+f",
+		"command": "notebook.format",
+		"when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
+	},
+	{
+		"key": "ctrl+shift+i",
+		"command": "-notebook.format",
+		"when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "editor.action.showHover",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+k ctrl+i",
+		"command": "-editor.action.showHover",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+i",
+		"command": "toggleSuggestionDetails",
+		"when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-toggleSuggestionDetails",
+		"when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+	},
+	{
+		"key": "ctrl+shift+i",
+		"command": "workbench.action.terminal.suggestToggleDetails",
+		"when": "simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-workbench.action.terminal.suggestToggleDetails",
+		"when": "simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
+	},
+	{
+		"key": "ctrl+shift+i",
+		"command": "focusSuggestion",
+		"when": "suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-focusSuggestion",
+		"when": "suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+	},
+	{
+		"key": "ctrl+shift+i",
+		"command": "editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-workbench.action.chat.holdToVoiceChatInChatView",
+		"when": "chatIsEnabled && hasSpeechProvider && !chatSessionRequestInProgress && !editorFocus && !inChatInput && !inSettingsEditor && !inlineChatFocused && !notebookEditorFocused && !searchViewletFocus"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-notebook.cell.chat.start",
+		"when": "config.notebook.experimental.cellChat && notebookChatAgentRegistered && notebookEditable && notebookEditorFocused && !inputFocus || config.notebook.experimental.generate && notebookChatAgentRegistered && notebookEditable && notebookEditorFocused && !inputFocus"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-inlineChat.holdForSpeech",
+		"when": "hasSpeechProvider && inlineChatVisible && textInputFocus"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-workbench.action.terminal.chat.start",
+		"when": "chatIsEnabled && terminalChatAgentRegistered && terminalFocusInAny && terminalHasBeenCreated || chatIsEnabled && terminalChatAgentRegistered && terminalFocusInAny && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-search.action.searchWithAI",
+		"when": "hasAIResultProviderKey && searchViewletFocus"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-settings.action.toggleAiSearch",
+		"when": "aiSettingResultsAvailable && inSettingsEditor"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-inlineChat2.reveal",
+		"when": "inlineChatHasEditsAgent && !chatEdits.isGlobalEditingSession && chatEdits.requestCount >= 1"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-inlineChat.startWithCurrentLine",
+		"when": "inlineChatHasProvider && inlineChatShowingHint && !editorReadonly && !inlineChatVisible"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-inlineChat.start",
+		"when": "editorFocus && inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput || editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly && !editorSimpleInput"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-inlineChat2.close",
+		"when": "inlineChatHasEditsAgent && inlineChatVisible && !chatEdits.isRequestInProgress && chatEdits.requestCount == '0' || inlineChatHasEditsAgent && inlineChatVisible && !chatEdits.hasEditorModifications && !chatEdits.isRequestInProgress && chatEdits.requestCount == '0'"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-workbench.action.chat.stopListeningAndSubmit",
+		"when": "inChatInput && voiceChatInProgress && scopedVoiceChatInProgress == 'editor' || inChatInput && voiceChatInProgress && scopedVoiceChatInProgress == 'inline' || inChatInput && voiceChatInProgress && scopedVoiceChatInProgress == 'quick' || inChatInput && voiceChatInProgress && scopedVoiceChatInProgress == 'view' || inlineChatFocused && voiceChatInProgress && scopedVoiceChatInProgress == 'editor' || inlineChatFocused && voiceChatInProgress && scopedVoiceChatInProgress == 'inline' || inlineChatFocused && voiceChatInProgress && scopedVoiceChatInProgress == 'quick' || inlineChatFocused && voiceChatInProgress && scopedVoiceChatInProgress == 'view'"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-workbench.action.chat.startVoiceChat",
+		"when": "chatIsEnabled && hasSpeechProvider && inChatInput && !chatSessionRequestInProgress && !editorFocus && !notebookEditorFocused && !scopedVoiceChatGettingReady && !speechToTextInProgress || chatIsEnabled && hasSpeechProvider && inlineChatFocused && !chatSessionRequestInProgress && !editorFocus && !notebookEditorFocused && !scopedVoiceChatGettingReady && !speechToTextInProgress"
+	},
+	{
+		"key": "f4",
+		"command": "-references-view.next",
+		"when": "reference-list.hasResult && references-view.canNavigate"
+	},
+	{
+		"key": "f4",
+		"command": "-search.action.focusNextSearchResult",
+		"when": "hasSearchResult || inSearchEditor"
+	},
+	{
+		"key": "f4",
+		"command": "-goToNextReference",
+		"when": "inReferenceSearchEditor || referenceSearchVisible"
+	},
+	{
+		"key": "f4",
+		"command": "editor.debug.action.toggleBreakpoint",
+		"when": "debuggersAvailable && disassemblyViewFocus || debuggersAvailable && editorTextFocus"
+	},
+	{
+		"key": "f9",
+		"command": "-editor.debug.action.toggleBreakpoint",
+		"when": "debuggersAvailable && disassemblyViewFocus || debuggersAvailable && editorTextFocus"
+	}
+]

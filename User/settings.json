@@ -1,0 +1,350 @@
+{
+	//__________________________________________________________
+	//LANGUAGES RELATED STUFF
+	//¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+	//PYTHON
+	// basedpyroght
+	"basedpyright.importStrategy": "useBundled", //needed to work without ms-python
+	"basedpyright.analysis.diagnosticMode": "workspace",
+	"basedpyright.analysis.autoFormatStrings": true,
+	"basedpyright.analysis.typeCheckingMode": "standard",
+	"basedpyright.analysis.inlayHints.variableTypes": true,
+	"basedpyright.analysis.inlayHints.functionReturnTypes": true,
+	"basedpyright.analysis.inlayHints.callArgumentNames": true,
+	"basedpyright.analysis.inlayHints.callArgumentNamesMatching": true,
+	"basedpyright.analysis.inlayHints.genericTypes": true,
+	//ruff
+	"ruff.lint.ignore": ["EXE"], // prevents shebag error with better comments next
+	"[python]": {
+		"editor.defaultFormatter": "charliermarsh.ruff",
+		"editor.codeActionsOnSave": {
+			"source.fixAll.ruff": "never",
+			"source.organizeImports.ruff": "explicit"
+		}
+	},
+	//stop main python extension from doing other's work
+	"python.defaultInterpreterPath": "python3",
+	"python.experiments.enabled": false,
+	"python.linting.enabled": false,
+	"python.linting.lintOnSave": false,
+
+	//JUPYTER
+	"jupyter.askForKernelRestart": false,
+	"notebook.codeActionsOnSave": {
+		"notebook.source.fixAll": "explicit",
+		"notebook.source.organizeImports": "explicit"
+	},
+	"notebook.formatOnSave.enabled": true,
+
+	//JS and JSON
+	"[javascript]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.codeActionsOnSave": {
+			"source.organizeImports.biome": "explicit",
+			"source.fixAll.biome": "never"
+		}
+	},
+	"json.format.enable": false, //disables vs code integrated json formatter
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+
+	"[snippets]": {
+		"editor.quickSuggestions": {
+			"strings": true
+		},
+		"editor.suggest.insertMode": "replace",
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+
+	//HTML
+	"[html]": {
+		//"editor.suggest.insertMode": "replace"
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+
+	//C/C++
+	"clangd.arguments": ["--log=verbose", "--fallback-style=LLVM"],
+	"clangd.cmakeExtensionName": "ms-vscode.cmake-tools",
+	"[cpp]": {
+		"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+		"editor.formatOnSave": true
+	},
+	"[c]": {
+		"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+		"editor.formatOnSave": true
+	},
+	"clangd.path": "/home/matteo/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/22.1.6/clangd_22.1.6/bin/clangd",
+
+	//HASKELL
+	"haskell.manageHLS": "GHCup",
+
+	//MARKDOWN
+	"[markdown]": {
+		//"better-comments.highlightPlainText": false,
+		"editor.unicodeHighlight.ambiguousCharacters": false,
+		"editor.unicodeHighlight.invisibleCharacters": false,
+		"diffEditor.ignoreTrimWhitespace": false,
+		"editor.wordWrap": "on",
+		"editor.quickSuggestions": {
+			"comments": "off",
+			"strings": "off",
+			"other": "off"
+		},
+		"editor.defaultFormatter": "charliermarsh.ruff"
+	},
+
+	//__________________________________________________________
+	// TOOLS
+	//¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+	//GIT
+	"git.blame.statusBarItem.enabled": true,
+	"git.openRepositoryInParentFolders": "never",
+
+	//BETTER COMMENTS
+	"better-comments.highlightPlainText": true,
+	"better-comments.strict": false,
+	"better-comments.tags": [
+		{
+			"tag": "!",
+			"color": "#E30000",
+			"strikethrough": false,
+			"underline": true,
+			"backgroundColor": "transparent",
+			"bold": true,
+			"italic": false
+		},
+		{
+			"tag": "`",
+			"color": "#F74D0F",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "?",
+			"color": "#054af7",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "//",
+			"color": "#474747",
+			"strikethrough": true,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "TODO",
+			"color": "#A405FF",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": true,
+			"italic": false
+		},
+		{
+			"tag": "fixme",
+			"color": "#A405FF",
+			"strikethrough": false,
+			"underline": true,
+			"backgroundColor": "transparent",
+			"bold": true,
+			"italic": false
+		},
+		{
+			"tag": "*",
+			"color": "#26e009",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "+",
+			"color": "#1D7000",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "^",
+			"color": "#fbff05",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": true
+		}
+	],
+
+	// BETTER TODO-TREE
+	"better-todo-tree.general.showActivityBarBadge": true,
+	"better-todo-tree.general.statusBar": "total",
+	"better-todo-tree.highlights.enabled": false,
+	"better-todo-tree.filtering.includeHiddenFiles": true,
+	"better-todo-tree.filtering.excludeGlobs": [
+		"**/node_modules/*/**",
+		"**/myenv/**",
+		"**/.git/**"
+	],
+
+	//PROJECT MANAGER
+	"projectManager.tags": [
+		"..PROJECTS",
+		"..STUDY",
+		".LATEX",
+		".RANDOMIMPORTANT",
+		"RANDOM"
+	],
+
+	//PINBOARD
+	"pinboard.scope": "global",
+
+	//__________________________________________________________
+	// APPEARANCE CUSTOMIZATION
+	//¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+	//EDITOR
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.editor.empty.hint": "hidden",
+	"workbench.colorTheme": "Monokai Dark+",
+	"workbench.colorCustomizations": {
+		//WRITING LINE
+		"editor.lineHighlightBorder": "#fe2c0751",
+		//TEXT SELECTION
+		"editor.selectionBackground": "#641313a6",
+		"editor.selectionHighlightBackground": "#641313a6",
+		//OUTLINE FOR SIDE BAR SELECTED FILE
+		"list.activeSelectionBackground": "#ff000055",
+		"list.focusOutline": "#ff0000",
+		"list.focusBackground": "#303030",
+		//BACKGROUND
+		"sideBar.background": "#000000",
+		"editor.background": "#000000",
+		"editorWidget.background": "#000000",
+		"panel.background": "#000000",
+		"statusBar.background": "#000000",
+		"menu.background": "#000000",
+		"commandCenter.background": "#000000",
+		"banner.background": "#000000",
+		"tab.inactiveBackground": "#000000",
+		"titleBar.activeBackground": "#000000",
+		"editorGroupHeader.tabsBackground": "#000000",
+		"statusBar.noFolderBackground": "#000000",
+		"statusBar.debuggingBackground": "#cc6633",
+		"statusBar.debuggingForeground": "#000000",
+		"statusBar.foreground": "#ff1e00",
+		//BORDERS
+		"editorGroupHeader.border": "#ff0000",
+		"panelTitle.border": "#ff0000", // "#ff0000b1" previously
+		"sideBar.border": "#ff0000",
+		"editorGroup.border": "#ff0000",
+		"editorGroupHeader.tabsBorder": "#ff0000",
+		"window.inactiveBorder": "#00ff11", //non so a cosa servano, le tengo brutte per notarle
+		"window.activeBorder": "#00eeff", //credo non funzionino su linux
+		"titleBar.border": "#ff0000",
+		"panel.border": "#ff0000",
+		"tab.border": "#787773",
+		"statusBar.border": "#ff0000",
+		"focusBorder": "#000000"
+	},
+	"editor.minimap.showSlider": "always",
+	"editor.minimap.size": "proportional",
+	"editor.minimap.renderCharacters": false,
+
+	//PERSONAL LINTING
+	"editor.tokenColorCustomizations": {
+		//"functions": "#000000",
+		//string support.class keyword costant.numeric variables entity.name.class"
+		"textMateRules": [
+			{
+				"scope": "comment",
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": "string",
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": "keyword",
+				"settings": {
+					"fontStyle": "bold"
+				}
+			},
+			{
+				"scope": "entity.name.type.class",
+				"settings": {
+					"fontStyle": "bold underline",
+					"foreground": "#A6E22E"
+				}
+			}
+			/*
+			{
+				//"scope": "variable",
+				"scope": "entity.name.type.class",
+				//"scope": "entity.name.function", //funzia
+				//"scope": "entity.name.type.class",
+				"settings": {
+					"foreground": "#00ff00",
+					"fontSize": "20px", //fontsize attribute doesn't seem to be supported
+					"lineHeight": 1, //this one works
+				},
+			},
+			*/
+		]
+	},
+
+	//__________________________________________________________
+	//PREVENTS SLOP / BAD FEATURES
+	//¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+	// GRAPHICAL
+	"workbench.list.smoothScrolling": false,
+	"editor.smoothScrolling": false,
+	"terminal.integrated.smoothScrolling": false,
+	"telemetry.feedback.enabled": false,
+
+	// AI
+	"chat.agent.enabled": false,
+	"chat.disableAIFeatures": true,
+
+	//__________________________________________________________
+	// RANDOM
+	//¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+	"workbench.editor.languageDetection": false,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"editor.formatOnSave": true,
+	"workbench.activityBar.location": "top",
+	"workbench.sideBar.location": "right",
+	"editor.acceptSuggestionOnEnter": "off",
+	"workbench.editor.showTabs": "multiple",
+	"chat.todoListTool.descriptionField": false,
+	"notebook.editorOptionsCustomizations": {
+		"editor.tabSize": 4,
+		"editor.indentSize": 4,
+		"editor.insertSpaces": false
+	},
+	"workbench.navigationControl.enabled": false
+}

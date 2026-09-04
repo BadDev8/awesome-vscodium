@@ -1,0 +1,7 @@
+{
+	"cpp": {
+		"prefix": "cpp",
+		"body": ["#include <iostream>", "int main(void) {", "    return 0;", "}"],
+		"description": "fast for initializing file"
+	}
+}

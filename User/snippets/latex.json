@@ -1,0 +1,17 @@
+{
+	"LATEX START FILE": {
+		"prefix": "LATEX",
+		"body": [
+			"\\documentclass{article}",
+			"\\usepackage[T1]{fontenc}",
+			"\\title{${1:titolo}}",
+			"\\author{${2:autore}}",
+			"\\date{${3:\\today}}",
+			"\\begin{document}",
+			"\\maketitle",
+			"${0:contenuto}",
+			"\\end{document}"
+		],
+		"description": "Minimal setup for latex file."
+	}
+}
